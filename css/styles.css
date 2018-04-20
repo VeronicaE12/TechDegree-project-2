@@ -1,0 +1,63 @@
+/*Global Layout Set-up*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Noto Serif', serif, sans-serif;
+}
+p {
+  font-size: 1em;
+  padding: .5em;
+}
+/* Link Styles */
+a, ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+li {
+  font-size: .5em;
+  background: white;
+  padding: 10px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* Section Styles */
+.main-nav {
+  width: 100%;
+  background: whitesmoke;
+  min-height: 30px;
+  padding: 10px;
+  text-align: center;
+}
+.profile-image {
+  margin-top: 20px;
+  width: 57%;
+  height: 57%;
+}
+.portolio-images {
+  width: 90%;
+  height: 90%;
+}
+#contact {
+  width: 100%;
+  background: whitesmoke;
+  min-height: 30px;
+  padding-bottom: 10px;
+}
+.footer-nav {
+  text-decoration: none;
+  border-top: solid 2px grey;
+  background: whitesmoke;
+  font-weight: bold;
+}
