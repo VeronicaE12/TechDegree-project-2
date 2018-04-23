@@ -89,9 +89,10 @@ main {
 }
 .footer-nav {
   text-decoration: none;
+  max-width: 100%;
   border-top: solid 2px grey;
   background: whitesmoke;
-  margin: 0;
+  margin: 0 10px;
   padding: 5px;
   padding-bottom: 45px;
 }
@@ -110,7 +111,7 @@ main {
   max-width: 50%;
 }
 
-.footerlinks {
+.footerLinks {
   display:none;
 }
 
@@ -129,12 +130,13 @@ main {
     display: inline;
     float: left;
     width: 60%;
+    text-align: left;
     padding: 25px 15px 25px 25px;
     font-size: 1.25em;
   }
   li,a {
     background: none;
-    display: inline;
+    display: inline-block;
     margin: 7px;
   }
   header {
@@ -155,7 +157,8 @@ main {
   .columns {
     margin:0 20px;
   }
-  .portfolio-left {
+  .portfolio-left,
+  .name {
     display: inline-block;
     float: left;
     max-width: 50%;
@@ -167,7 +170,11 @@ main {
     max-width: 50%;
     padding-left: 5px;
   }
-
+.footerLinks {
+    display: inline-flex;
+    width: 40%;
+    margin-right: -16em;
+}
   .contactP {
     margin-left: 20%;
     margin-right: 20%;
@@ -175,15 +182,7 @@ main {
   .top {
     display: none;
   }
-  .name {
-    display: inline-block;
-    max-width: 30%;
-  }
-.footerlinks {
-  display: inline-block;
-  float: right;
-  max-width:60%;
-}
+
   footer {
     font-size: 1.3em;
     max-width: 1200px;
@@ -199,5 +198,39 @@ main {
 	}
 @media screen and (min-width: 1024px){
 
+  main-nav {
+    padding-bottom: 10px;
+  }
+  header {
+    min-height: 475px;
+  }
+  h1 {
+    float: left;
+    display: inline-block;
+    padding-right: 6em;
+  }
+  .intro {
+    font-size: 1.5em;
+  }
+  .nav {
+    padding: 0 30px;
+    padding-bottom: 20px;
+    float: right;
+  }
 
+  li,a {
+    background: none;
+    display: inline-block;
+    margin: 7px;
+  }
+
+  .portfolio-left,
+  .portfolio-right {
+    max-width: 33.3%;
+    padding: 5px;
+  }
+
+  .footerLinks {
+        margin-right: -30em;
+  }
 }
