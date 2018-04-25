@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <title>Student Name</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
   </head>
   <body id="top">
-    <div class="main-nav">
+    <nav class="main-nav">
       <h1>Student Name</h1>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href= "#contact">Contact</a></li>
+        <li><a href= "#skills">Skills</a></li>
       </ul>
 
       <header class= "clearfix">
@@ -21,7 +23,7 @@
         <p class="intro">Hi! I'm a front-end developer who loves responsive design and CSS.  I recently finished
           learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </header>
-    </div>
+    </nav>
 
       <main id="portfolio">
         <div class="columns clearfix">
@@ -63,23 +65,36 @@
             </div>
           </div>
         </main>
+        <section id="skills">
+          <h3>Skills</h3>
+            <p> I have a wide array of skills and many life experiences.  I believe that through every experience knowledge is gained and through hard work and dedication
+              skills are developed. Here are some of the skills I have developed:</p>
+            <div class="skillsList">
+            <ol>
+              <li>Strong communication, detail oriented, and analytical.</li>
+              <li>Highly organized, accountable, punctual, and able to multi-task.</li>
+              <li>Able to work well as an individual or as a team player.</li>
+            </ol>
+          </div>
+          </section>
 
           <div class="contactInfo">
-            <h2 id="contact">Contact</h2>
+            <h3 id="contact">Contact</h3>
             <p class="contactP">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-            <p class="contactInfo">Phone <b>+1(111)555-1234</b><br><br>
-              Email <b>email@yoursite.com<b>
+            <p class="contactInfo">Phone <b>+1(111)555-1234</b><br>
+                Email <b>email@yoursite.com</b></p>
 
           <footer class="footer-nav clearfix">
             <h4 class="name">Student Name</h4>
               <h4><a href="#top" class="top">BACK TO TOP</a></h4>
-              <ul>
               <div class="footerLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href= "#skills">Skills</a></li>
+                </ul>
               </div>
-              </ul>
           </footer>
         </div>
   </body>

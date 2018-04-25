@@ -18,13 +18,21 @@ p {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
+  color: dimgrey;
+  font-family: 'Roboto', sans-serif;
 }
 h2 {
   margin-top: 30px;
   margin-bottom: 20px;
+  color: darkcyan;
 }
 h4 {
   margin:0 auto;
+}
+#skills p {
+  text-align: left;
+  max-width: 80%;
+  margin: 0 auto;
 }
 /* Link Styles */
 a, ul {
@@ -33,10 +41,13 @@ a, ul {
   color: black;
   font-size: 1.3em;
   margin: 0;
-  padding-bottom: 30px;
+  padding: 0 10px 30px 10px;
 }
 a {
   padding: 0px 80px;
+}
+a:hover {
+  color: darkcyan;
 }
 li {
   font-size: .7em;
@@ -44,6 +55,15 @@ li {
   margin: 5px;
   padding: 8px;
   text-transform: uppercase;
+}
+.skillsList li {
+  text-transform: none;
+  background: none;
+  list-style-type: disc;
+  text-align: left;
+  max-width: 70%;
+  margin-left: 20%;
+  font-size: 1em;
 }
 .footer-nav li {
   background: none;
@@ -72,14 +92,20 @@ header {
   width: 80%;
   height: 80%;
 }
-.potfolio {
-  padding-top: 30px;
-  padding-bottom: 40px;
-}
+
 .intro {
   text-align: center;
   margin: 0 auto;
   padding: 25px;
+}
+.potfolio {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+#skills {
+  background: thistle;
+  padding: 10px;
+  margin-top: 20px;
 }
 #contact {
   width: 100%;
@@ -87,8 +113,11 @@ header {
   min-height: 30px;
   padding: 10px 0;
 }
-.contactInfo {
+.contactP {
   line-height: 1.5em;
+}
+.contactInfo {
+  line-height: 3em;
   background: whitesmoke;
   padding-top: 20px;
 }
@@ -159,6 +188,7 @@ header {
   .columns {
     background: white;
     padding: 35px 25px;
+    margin-bottom: 30px;
   }
   .portfolio-left {
     display: inline-block;
@@ -172,6 +202,26 @@ header {
     max-width: 50%;
     padding-left: 5px;
   }
+  #skills {
+    background: thistle;
+    padding: 20px;
+    max-width:100%;
+    margin: 0 auto;
+  }
+
+  #skills p {
+    text-align: left;
+    max-width: 70%;
+  }
+    .skillsList {
+    max-width: 70%;
+    margin-left: 20%;
+  }
+   ol li {
+    text-align: left;
+    list-style-type: disc;
+  }
+
   .contactP {
     margin: 0 auto;
     max-width: 60%;
@@ -206,6 +256,8 @@ header {
 		display: table;
 		clear: both;
 	}
+
+
 @media screen and (min-width: 1024px){
 
   header {
@@ -241,7 +293,7 @@ header {
     font-size: 1em;
   }
   .columns {
-    margin: 0 35px;
+    margin: 35px;
   }
   .portfolio-left,
   .portfolio-right {
@@ -258,6 +310,22 @@ header {
   .bottom-left {
     float: left;
   }
+  #skills {
+    background: thistle;
+    padding: 20px;
+    max-width:100%;
+    margin: 0 auto;
+  }
+
+  #skills p {
+    text-align: left;
+    max-width: 50%;
+  }
+    .skillsList {
+    max-width: 50%;
+    margin-left: 20%;
+  }
+
   .contactP {
     max-width: 44%;
   }
