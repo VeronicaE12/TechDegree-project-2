@@ -12,18 +12,12 @@ body {
 }
 p {
   font-size: 1em;
-  padding: .5em;
   margin: 0 30px 2em;
   font-weight: lighter;
 }
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  padding: 30px 0;
-}
-h1 {
-  padding: 0;
-  margin: 5px;
 }
 h2 {
   margin-top: 30px;
@@ -37,27 +31,37 @@ a, ul {
   text-decoration: none;
   list-style-type: none;
   color: black;
-  padding: 0;
+  font-size: 1.3em;
+  margin: 0;
+  padding-bottom: 30px;
 }
-
+a {
+  padding: 0px 80px;
+}
 li {
-  font-size: .5em;
+  font-size: .7em;
   background: white;
-  padding: 10px;
   margin: 5px;
+  padding: 8px;
   text-transform: uppercase;
 }
-
+.footer-nav li {
+  background: none;
+}
 /* Section Styles */
 .main-nav {
   width: 100%;
   background: whitesmoke;
   min-height: 30px;
-  padding: 10px;
+  padding-top: 10px;
   text-align: center;
 }
-main {
-  padding-bottom: 10px;
+header {
+  padding-bottom: 20px;
+}
+.columns {
+  background: white;
+  padding: 30px 0;
 }
 .profile-image {
   margin-top: 20px;
@@ -94,22 +98,22 @@ main {
   border-top: solid 2px grey;
   background: whitesmoke;
   margin: 0 10px;
-  padding: 5px;
   padding-bottom: 45px;
+  padding-top: 20px;
 }
 
 .name {
   float: left;
   display: inline-block;
-  margin-left: 5px;
   max-width: 50%;
 }
 
 .top {
   float: right;
   display: inline-block;
-  margin-right: 5px;
   max-width: 50%;
+  font-size: 1em;
+  padding: 0;
 }
 
 .footerLinks {
@@ -122,7 +126,7 @@ main {
   #profile {
     margin: 0 20px;
   }
-    .profile-image {
+  .profile-image {
     display: inline-block;
     float: right;
     width: 40%;
@@ -132,34 +136,29 @@ main {
     float: left;
     width: 60%;
     text-align: left;
-    padding: 25px;
+    padding: 20px;
     font-size: 1.25em;
   }
-  li,a {
+  li, a {
     background: none;
-    display: inline-block;
     margin: 7px;
     font-size: 1em;
+    display: inline-block;
+    padding: 0;
   }
   header {
-    min-height: 325px;
+    min-height: 275px;
     padding-right: 20px;
   }
 
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-    padding-bottom: 20px;
-  }
   .portfolio-images{
     width: 100%;
     height:100%;
   }
 
   .columns {
-    margin:0 25px;
     background: white;
-    padding: 0 25px;
+    padding: 35px 25px;
   }
   .portfolio-left {
     display: inline-block;
@@ -175,26 +174,29 @@ main {
   }
   .contactP {
     margin: 0 auto;
-    max-width: 55%;
+    max-width: 60%;
+    padding-bottom: 40px;
   }
-  .footerLinks {
-    display: inline-block;
-    font-size: .8em;
-    float: right;
+  .contactInfo {
+    padding-bottom: 35px;
   }
   .name {
     display: inline-block;
-    float: left;
-    width: 30%;
+    max-width: 20%;
+    padding-left: 25px;
+    padding-top: 10px;
   }
   .top {
     display: none;
   }
 
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+  .footer-nav {
+    padding-bottom: 55px;
+  }
+  .footerLinks {
+    font-size: .8em;
+    display: inline-block;
+    float: right;
   }
 }
 
@@ -207,16 +209,24 @@ main {
 @media screen and (min-width: 1024px){
 
   header {
-    min-height: 350px;
+    min-height: 430px;
+    margin-top: 40px;
   }
   h1 {
-    float: left;
     display: inline-block;
+    font-size: 1.5em;
+    margin: 0;
     padding-left: 25px;
+    padding-top: 5px;
+    float: left;
+  }
+  .profile-image {
+    clear: both;
+    padding-right: 20px;
   }
   .intro {
     font-size: 1.5em;
-    max-width: 60%;
+    max-width: 57%;
   }
   .main-nav {
     padding: 0 25px;
@@ -230,11 +240,13 @@ main {
     margin: 7px;
     font-size: 1em;
   }
-
+  .columns {
+    margin: 0 35px;
+  }
   .portfolio-left,
   .portfolio-right {
     max-width: 33.3%;
-    padding: 5px;
+    padding: 5px 10px;
     margin: 0 auto;
   }
   .portfolio-right {
@@ -249,12 +261,18 @@ main {
   .contactP {
     max-width: 44%;
   }
-  /* ul {
-    display: inline-block;
-  } */
+  .footer-nav {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .name {
+    max-width: 30%;
+  }
   .footerLinks {
-    display: inline-block;
     font-size: .8em;
-    float: right;
+    padding-bottom: 0;
+  }
+  .footer.nav {
+    padding-bottom: 10px;
   }
 }
